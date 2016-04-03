@@ -13,7 +13,6 @@ import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
 import android.widget.LinearLayout;
-import android.widget.TextView;
 
 public class ChoiceActivity extends Activity
 {
@@ -52,7 +51,25 @@ public class ChoiceActivity extends Activity
           {
             Log.i("myApp", "id = "+v.getId());
             choiceselected = v.getId();
-            Intent intent = new Intent(ChoiceActivity.this, ConvocationActivity.class);
+            Intent intent = null;
+            if (choiceselected == listechoice.indexOf("Convocations"))
+            {
+            	intent = new Intent(ChoiceActivity.this, ConvocationActivity.class);
+            }
+            else
+            {
+                if (choiceselected == listechoice.indexOf("Resultat"))
+                {
+                	intent = new Intent(ChoiceActivity.this, ConvocationActivity.class);
+                }
+                else
+                {
+                    if (choiceselected == listechoice.indexOf("Informations Club"))
+                    {
+                    	intent = new Intent(ChoiceActivity.this, ConvocationActivity.class);
+                    }
+                }
+            }
             startActivity(intent);
           }
         });
