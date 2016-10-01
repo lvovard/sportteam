@@ -1,22 +1,18 @@
 package com.lvovard.sportteam;
 
-import java.io.File;
-import java.io.FileNotFoundException;
-import java.io.IOException;
-import java.io.OutputStreamWriter;
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.Enumeration;
-import java.util.Iterator;
-import java.util.List;
+import android.app.ActionBar;
+
+//import com.lvovard.sportteam.MyBroadcastReceiver.getConvocationDateNotifMain;
 
 import android.app.Activity;
 import android.app.AlertDialog;
-import android.app.Dialog;
-import android.content.Context;
+import android.app.TaskStackBuilder;
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.database.Cursor;
+import android.database.SQLException;
 import android.os.Bundle;
+import android.support.v4.app.NavUtils;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuInflater;
@@ -25,12 +21,10 @@ import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
 import android.widget.LinearLayout;
-import android.widget.Toast;
 
 public class ClubActivity extends Activity
 {
   
-  static int clubselected;
 
   @Override
   protected void onCreate(Bundle savedInstanceState)
@@ -39,9 +33,45 @@ public class ClubActivity extends Activity
     setContentView(R.layout.activity_club);
     LinearLayout layout = (LinearLayout) findViewById(R.id.linlayout);
     layout.setOrientation(LinearLayout.VERTICAL);
-
-    layout.setBackgroundResource(R.drawable.bluebkg);
-
+    //layout.setBackgroundResource(R.drawable.bluebkg);
+    getWindow().setBackgroundDrawableResource(R.drawable.bluebkg);
+    getActionBar().setDisplayHomeAsUpEnabled(true);
+    ActionBar actionBar = getActionBar();
+    actionBar.setTitle("SportTeam");
+    actionBar.setSubtitle("Clubs");
+    try
+    {
+      Cursor c=Global.db.rawQuery("SELECT * FROM connexion", null);
+      if(c.getCount()==0)
+      {
+        Log.i("myApp", "get all DB connexion records -> nothing");
+      }
+      else
+      {
+        StringBuffer buffer=new StringBuffer();
+        while(c.moveToNext())
+        {
+          buffer.append("sport  : "+c.getString(0)+"\n");
+          buffer.append("dep    : "+c.getString(1)+"\n");
+          buffer.append("club   : "+c.getString(2)+"\n");
+          buffer.append("club_id: "+c.getString(3)+"\n\n");
+          buffer.append("cat    : "+c.getString(4)+"\n");
+          Record rec = new Record(c.getString(0), c.getString(1), c.getString(2), c.getString(5), c.getString(4), c.getString(3));
+        }
+        Log.i("myApp","connexion "+buffer.toString());
+      }
+    }
+    catch(SQLException e)
+    {
+      if (e.toString().contains("no such table"))
+      {
+        Log.i("myApp","table connexion does not exist");  
+      }
+      else
+      {
+        Log.i("myApp","error when opening connexion table : "+e.toString());
+      }
+    }
     
     //if user has recorder at least one club
     if (Record.recordlist.size() > 0)
@@ -51,23 +81,23 @@ public class ClubActivity extends Activity
         Button btn = new Button(this);
         btn.setText(r.getClub());
         int sport_picture = 0;
-        if (r.getSport().equals("Football"))
+        if (r.getSport().equals("football"))
         {
           sport_picture = R.drawable.football;
         }
-        if (r.getSport().equals("Handball"))
+        if (r.getSport().equals("handball"))
         {
           sport_picture = R.drawable.handball;
         }
-        if (r.getSport().equals("Basketball"))
+        if (r.getSport().equals("basketball"))
         {
           sport_picture = R.drawable.basketball;
         }
-        if (r.getSport().equals("Volleyball"))
+        if (r.getSport().equals("volleyball"))
         {
           sport_picture = R.drawable.volleyball;
         }
-        if (r.getSport().equals("Rugby"))
+        if (r.getSport().equals("rugby"))
         {
           sport_picture = R.drawable.rugby;
         }
@@ -81,13 +111,21 @@ public class ClubActivity extends Activity
           @Override
           public void onClick(View v) 
           {
-            Log.i("myApp", "id = "+v.getId());
-            clubselected = v.getId();
+            Record r = Record.recordlist.get(v.getId());
+            Global.current_club = r.getClub();
+            Global.current_sport = r.getSport();
+            Global.current_club_id = r.getIdClub();
+            Record.current_record = r;
             Intent intent = new Intent(ClubActivity.this, CategoryActivity.class);
             startActivity(intent);
           }
         });
       }
+    }
+    else
+    {
+      Intent intent = new Intent(ClubActivity.this, MainActivity.class);
+      startActivity(intent);
     }
   }
 
@@ -120,6 +158,26 @@ public class ClubActivity extends Activity
         MainActivity.state = "SUPPRESSION";
         dialogBoxRemoveAll();
         return true;
+      case android.R.id.home:
+        Intent upIntent = NavUtils.getParentActivityIntent(this);
+        if (NavUtils.shouldUpRecreateTask(this, upIntent)) 
+        {
+          // This activity is NOT part of this app's task, so create a new task
+          // when navigating up, with a synthesized back stack.
+          TaskStackBuilder.create(this)
+          // Add all of this activity's parents to the back stack
+          .addNextIntentWithParentStack(upIntent)
+          // Navigate up to the closest parent
+          .startActivities();
+        } 
+        else 
+        {
+          // This activity is part of this app's task, so simply
+          // navigate up to the logical parent activity.
+          NavUtils.navigateUpTo(this, upIntent);
+        }
+        return true;
+
       default:
         return super.onOptionsItemSelected(item);
     }    
@@ -129,40 +187,32 @@ public class ClubActivity extends Activity
   public void dialogBoxRemoveAll() 
   {
     AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(this);
-    alertDialogBuilder.setMessage("Effacer tous");
-    alertDialogBuilder.setPositiveButton("OUI",
-        new DialogInterface.OnClickListener() {
-
-            @Override
-            public void onClick(DialogInterface arg0, int arg1) {
-              
-              try
-              {
-                //if user confirm the deletion, erase file and clear the list and then reload activity
-                OutputStreamWriter out = new OutputStreamWriter(openFileOutput("connexion.txt",0));
-                out.write("");
-                out.close();
-                Record.recordlist.clear();
-                finish();
-                startActivity(getIntent());
-              } catch (IOException e)
-              {
-                // TODO Auto-generated catch block
-                e.printStackTrace();
-              }
-        }
+    alertDialogBuilder.setMessage("Etes vous sur de vouloir vous desabonner de tous ces clubs?");
+    alertDialogBuilder.setPositiveButton("OUI",new DialogInterface.OnClickListener() 
+    {
+      @Override
+      public void onClick(DialogInterface arg0, int arg1) 
+      {
+          //if user confirm the deletion, delete the 4 tables used for notification and connection
+          Global.db.execSQL("DROP TABLE IF EXISTS connexion");
+          Global.db.execSQL("DROP TABLE IF EXISTS dateresultat");
+          Global.db.execSQL("DROP TABLE IF EXISTS dateconvocation");
+          Global.db.execSQL("DROP TABLE IF EXISTS dateinformation");
+          Record.recordlist.clear();
+          finish();
+          startActivity(getIntent());
+      }
     });
 
-    alertDialogBuilder.setNegativeButton("NON",
-        new DialogInterface.OnClickListener() {
-
-        @Override
-        public void onClick(DialogInterface arg0, int arg1) {
-
-        }
+    alertDialogBuilder.setNegativeButton("NON",new DialogInterface.OnClickListener() 
+    {
+      @Override
+      public void onClick(DialogInterface arg0, int arg1) 
+      {
+      }
     });
 
     AlertDialog alertDialog = alertDialogBuilder.create();
     alertDialog.show();
-}
+  }
 }

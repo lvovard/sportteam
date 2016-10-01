@@ -8,6 +8,11 @@
         android:minSdkVersion="15"
         android:targetSdkVersion="15" />
 
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+
     <application
         android:allowBackup="true"
         android:icon="@drawable/ic_launcher"
@@ -24,23 +29,108 @@
         </activity>
         <activity
             android:name=".ClubActivity"
-            android:label="@string/title_activity_club" >
+            android:label="@string/title_activity_club"
+            android:launchMode="singleTop"
+            android:parentActivityName=".MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
         </activity>
         <activity
             android:name=".CategoryActivity"
-            android:label="@string/title_activity_category" >
+            android:label="@string/title_activity_category"
+            android:launchMode="singleTop"
+            android:parentActivityName=".ClubActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".ClubActivity" />
         </activity>
         <activity
             android:name=".EquipeActivity"
-            android:label="@string/title_activity_equipe" >
+            android:label="@string/title_activity_equipe"
+            android:launchMode="singleTop"
+            android:parentActivityName=".CategoryActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".CategoryActivity" />
         </activity>
         <activity
             android:name=".ChoiceActivity"
-            android:label="@string/title_activity_choice" >
+            android:label="@string/title_activity_choice"
+            android:launchMode="singleTop"
+            android:parentActivityName=".EquipeActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".EquipeActivity" />
         </activity>
         <activity
             android:name=".ConvocationActivity"
-            android:label="@string/title_activity_convocation" >
+            android:label="@string/title_activity_convocation"
+            android:launchMode="singleTop"
+            android:parentActivityName=".ChoiceActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".ChoiceActivity" />
+        </activity>
+        <activity
+            android:name=".ConvocdetailsActivity"
+            android:label="@string/title_activity_convocdetails"
+            android:launchMode="singleTop"
+            android:parentActivityName=".ConvocationActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".ConvocationActivity" />
+        </activity>
+        <activity
+            android:name=".ResultatActivity"
+            android:label="@string/title_activity_resultat"
+            android:launchMode="singleTop"
+            android:parentActivityName=".ChoiceActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".ChoiceActivity" />
+        </activity>
+        <activity
+            android:name=".ResultdetailsActivity"
+            android:label="@string/title_activity_resultdetails"
+            android:launchMode="singleTop"
+            android:parentActivityName=".ResultatActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".ResultatActivity" />
+        </activity>
+        <activity
+            android:name=".InfoActivity"
+            android:label="@string/title_activity_info"
+            android:launchMode="singleTop"
+            android:parentActivityName=".ChoiceActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".ChoiceActivity" />
+        </activity>
+        <activity
+            android:name=".InfodetailsActivity"
+            android:label="@string/title_activity_infodetails"
+            android:launchMode="singleTop"
+            android:parentActivityName=".InfoActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".InfoActivity" />
+        </activity>
+
+        <service android:name=".MyTestService" />
+
+        <receiver android:name=".MyBroadcastReceiver" >
+        </receiver>
+        <receiver android:name=".BootBroadcastReceiver" >
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name=".ManagementActivity"
+            android:label="@string/title_activity_management" >
         </activity>
     </application>
 

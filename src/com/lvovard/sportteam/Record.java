@@ -1,15 +1,10 @@
 package com.lvovard.sportteam;
 
-import java.io.FileOutputStream;
-import java.io.OutputStream;
-import java.io.OutputStreamWriter;
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
 
-import android.content.Context;
 import android.util.Log;
 import android.widget.Button;
 
@@ -20,6 +15,7 @@ public class Record
   String departement = null;
   String club = null;
   String password = null;
+  String id_club = null;
   List<String> category = new ArrayList<String>();
   boolean addedInList = false;
   Button btn ;
@@ -27,14 +23,17 @@ public class Record
   
   static int id_appli = 1;
   
+  static Record current_record = null;
+  
   static List<Record> recordlist = new ArrayList<Record>();
 
-  public Record(String sp, String dep, String clb, String pwd, String cat)
+  public Record(String sp, String dep, String clb, String pwd, String cat, String idclub)
   {
     sport = sp;
     departement = dep;
     club = clb;
     password = pwd;
+    id_club = idclub;
     if (clubExists(clb) == false)
     {
       Log.i("myApp", clb+" does not exist: create new entry");
@@ -113,7 +112,34 @@ public class Record
     return false;
   }
   
-
+  static boolean RemoveRecord(String clubid)
+  {
+    for(Record rcd:recordlist)
+    {
+      if ( rcd.id_club.contentEquals(clubid))
+      {
+        recordlist.remove(rcd);
+        return true;
+      }
+      
+    }
+    return false;
+  }
+  
+  static boolean RemoveRecord(String clubid,String cat)
+  {
+    for(Record rcd:recordlist)
+    {
+      if ( rcd.id_club.contentEquals(clubid) && rcd.getCategory().contains(cat) )
+      {
+        recordlist.remove(rcd);
+        current_record.category.remove(cat);
+        return true;
+      }
+      
+    }
+    return false;
+  }
   
   public boolean hasBeenAddedToTheList()
   {
@@ -123,6 +149,11 @@ public class Record
   public String getSport()
   {
     return sport;
+  }
+  
+  public String getIdClub()
+  {
+    return id_club;
   }
   
   public String getDepartement()

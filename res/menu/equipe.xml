@@ -3,6 +3,12 @@
     tools:context="com.lvovard.sportteam.EquipeActivity" >
 
     <item
+        android:id="@+id/action_delete"
+        android:icon="@android:drawable/ic_menu_delete"
+        android:title="action_delete"
+        android:showAsAction="ifRoom" />
+
+    <item
         android:id="@+id/action_settings"
         android:orderInCategory="100"
         android:showAsAction="never"

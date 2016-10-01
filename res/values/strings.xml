@@ -125,7 +125,9 @@
 986 : Wallis-et-Futuna
 987 : Polynésie française
 988 : Nouvelle-Calédonie
-989 : île de Clipperton
+989 : île de Clipperton
+
+
     -->
 
     <string-array name="club_array">
@@ -145,5 +147,11 @@
     <string name="title_activity_equipe">EquipeActivity</string>
     <string name="title_activity_choice">ChoiceActivity</string>
     <string name="title_activity_convocation">ConvocationActivity</string>
+    <string name="title_activity_convocdetails">ConvocdetailsActivity</string>
+    <string name="title_activity_resultat">ResultatActivity</string>
+    <string name="title_activity_resultdetails">ResultdetailsActivity</string>
+    <string name="title_activity_info">InfoActivity</string>
+    <string name="title_activity_infodetails">InfodetailsActivity</string>
+    <string name="title_activity_management">ManagementActivity</string>
 
 </resources>
