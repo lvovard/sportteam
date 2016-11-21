@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+ <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/scrollview"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:id="@+id/linlayout"
+    android:gravity="center"
+    android:orientation="vertical"  >
+
+<TextView
+    android:id="@+id/textcat"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_gravity="center_horizontal"
+    android:text="Sélectionner la catégorie" />
+
+<Spinner
+    android:id="@+id/spinner_cat"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_gravity="center_horizontal" /> 
+    
+    
+<TextView
+    android:id="@+id/textequipe"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_gravity="center_horizontal" 
+    android:text="Sélectionner l'équipe" />
+    
+<Spinner
+    android:id="@+id/spinner_equipe"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_gravity="center_horizontal" />
+
+<TextView
+    android:id="@+id/textconvoc"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_gravity="center_horizontal" 
+    android:text="Sélectionner la convocation" />
+    
+<Spinner
+    android:id="@+id/spinner_convoc"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_gravity="center_horizontal" />
+
+<Button
+    android:id="@+id/btnDateMatch"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_gravity="center_horizontal"
+    android:text="Clicker pour choisir la date du match" />  
+    
+<TextView
+    android:id="@+id/textadversaire"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:text="Entrer l'adversaire" />
+
+<EditText
+    android:id="@+id/txt_adversaire"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:ems="10" />
+    
+
+<TextView
+    android:id="@+id/textmatch"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_gravity="center_horizontal" 
+    android:text="Sélectionner le type de match" />
+    
+<Spinner
+    android:id="@+id/spinner_match"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_gravity="center_horizontal" />
+
+<TextView
+    android:id="@+id/textcompet"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_gravity="center_horizontal" 
+    android:text="Sélectionner la competition" />
+    
+<Spinner
+    android:id="@+id/spinner_compet"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_gravity="center_horizontal" />
+
+
+<Button
+    android:id="@+id/btnHeureMatch"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_gravity="center_horizontal"
+    android:text="Clicker pour choisir l'heure du match" /> 
+    
+<TextView
+    android:id="@+id/textlieumatch"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:text="Entrer le lieu du match" />
+
+<EditText
+    android:id="@+id/txt_lieumatch"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:ems="10" />
+    
+<Button
+    android:id="@+id/btnHeureRdv"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_gravity="center_horizontal"
+    android:text="Clicker pour choisir l'heure du rdv" />
+
+<TextView
+    android:id="@+id/textlieurdv"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:text="Entrer le lieu du rdv" />
+
+<EditText
+    android:id="@+id/txt_lieurdv"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:ems="10" />
+
+<Button
+    android:id="@+id/btnJoueur"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_gravity="center_horizontal"
+    android:text="Clicker pour selectionner les joueurs" />
+
+<Button
+    android:id="@+id/btnDirigeant"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_gravity="center_horizontal"
+    android:text="Clicker pour selectionner les dirigeants" />
+
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:id="@+id/linlayout"
+    android:orientation="horizontal"  >
+<Button
+    android:id="@+id/btnValider"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_weight="1"
+    android:text="Valider" />  
+    
+<Button
+    android:id="@+id/btnAnnuler"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_weight="1"
+    android:text="Annuler" /> 
+</LinearLayout>
+
+
+</LinearLayout>
+</ScrollView>
+

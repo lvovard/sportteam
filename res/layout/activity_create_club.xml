@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+ <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/scrollview"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:id="@+id/linlayout"
+    android:orientation="vertical"  >
+
+<TextView
+    android:id="@+id/textsport"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:text="Choisissez un sport" />
+    
+<Spinner
+    android:id="@+id/sport_spinner"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" />
+
+<TextView
+    android:id="@+id/textdep"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:text="Choisissez un departement" />
+
+<Spinner
+    android:id="@+id/departement_spinner"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" />
+    
+<TextView
+    android:id="@+id/textclub"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:text="Entrer le nom du nouveau club" />
+
+<EditText
+    android:id="@+id/txt_name"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:ems="10" />
+
+<TextView
+    android:id="@+id/textemail"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:text="Entrer une adresse email" />
+
+<EditText
+    android:id="@+id/txt_email"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:ems="10"
+    android:inputType="textEmailAddress" />
+
+    
+<TextView
+    android:id="@+id/textpwdadmin"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:text="Entrer un mot de passe admin de votre club" />      
+    
+<EditText
+    android:id="@+id/txt_pwd_admin"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:inputType="textPassword" >
+    <requestFocus />
+</EditText>
+
+<TextView
+    android:id="@+id/textpwdadminconfirm"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:text="Confirmer le mot de passe admin de votre club" />      
+    
+<EditText
+    android:id="@+id/txt_pwd_admin_confirm"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:inputType="textPassword" >
+    <requestFocus />
+</EditText>
+
+<TextView
+    android:id="@+id/textpwduser"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:text="Entrer un mot de passe utilisateur de votre club" />      
+    
+<EditText
+    android:id="@+id/txt_pwd_user"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:inputType="textPassword" >
+    <requestFocus />
+</EditText>
+
+<TextView
+    android:id="@+id/textpwduserconfirm"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:text="Confirmer le mot de passe utilisateur de votre club" />      
+    
+<EditText
+    android:id="@+id/txt_pwd_user_confirm"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:inputType="textPassword" >
+    <requestFocus />
+</EditText>
+
+<CheckBox
+    android:id="@+id/checkBox1"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:text="Afficher mot de passe" />
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:id="@+id/linlayout"
+    android:orientation="horizontal"  >
+<Button
+    android:id="@+id/btnCreate"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_weight="1"
+    android:text="Créer" />  
+    
+<Button
+    android:id="@+id/btnAnnuler"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_weight="1"
+    android:text="Annuler" /> 
+</LinearLayout>
+</LinearLayout>
+</ScrollView>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+ <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/scrollview"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:id="@+id/linlayout"
+    android:gravity="center"
+    android:orientation="vertical"  >
+
+ 
+
+<Button
+    android:id="@+id/btnAddConv"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_gravity="center_horizontal"
+    android:text="Ajouter une convocation" />  
+    
+<Button
+    android:id="@+id/btnModifyConv"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_gravity="center_horizontal"
+    android:text="Modifier une convocation" />
+
+<Button
+    android:id="@+id/btnRemoveConv"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_gravity="center_horizontal"
+    android:text="Supprimer une convocation" />  
+
+</LinearLayout>
+</ScrollView>

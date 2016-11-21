@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+ <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/scrollview"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:id="@+id/linlayout"
+    android:gravity="center"
+    android:orientation="vertical"  >
+
+ 
+
+<Button
+    android:id="@+id/btnPwd"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_gravity="center_horizontal"
+    android:text="Gestion des mots de passe" />  
+    
+<Button
+    android:id="@+id/btnCat"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_gravity="center_horizontal"
+    android:text="Gestion des catégories / équipes" /> 
+    
+<Button
+    android:id="@+id/btnJoueur"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_gravity="center_horizontal"
+    android:text="Gestion des joueurs / dirigeants" /> 
+    
+<Button
+    android:id="@+id/btnConvoc"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_gravity="center_horizontal"
+    android:text="Gestion des convocations" /> 
+    
+<Button
+    android:id="@+id/btnResult"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_gravity="center_horizontal"
+    android:text="Gestion des résultats" /> 
+    
+<Button
+    android:id="@+id/btnInfo"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_gravity="center_horizontal"
+    android:text="Gestion des informations" /> 
+    
+
+</LinearLayout>
+</ScrollView>

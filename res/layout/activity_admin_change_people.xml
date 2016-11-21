@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+ <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/scrollview"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:id="@+id/linlayout"
+    android:gravity="center"
+    android:orientation="vertical"  >
+
+<TextView
+    android:id="@+id/textcat"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_gravity="center_horizontal"
+    android:text="Sélectionner la catégorie" />
+
+<Spinner
+    android:id="@+id/spinner_cat"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_gravity="center_horizontal" /> 
+    
+    
+<TextView
+    android:id="@+id/textrole"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_gravity="center_horizontal" 
+    android:text="Sélectionner le rôle" />
+    
+<Spinner
+    android:id="@+id/spinner_role"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_gravity="center_horizontal" />
+
+<TextView
+    android:id="@+id/textnom"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:text="Entrer le nom du joueur / dirigeant" />
+
+<EditText
+    android:id="@+id/txt_nom"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:ems="10" />
+
+<TextView
+    android:id="@+id/textprenom"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:text="Entrer le prénom du joueur / dirigeant" />
+
+<EditText
+    android:id="@+id/txt_prenom"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:ems="10" />
+
+<TextView
+    android:id="@+id/textpeople"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_gravity="center_horizontal" 
+    android:text="Sélectionner le joueur / dirigeant" />
+    
+<Spinner
+    android:id="@+id/spinner_people"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_gravity="center_horizontal" />
+
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:id="@+id/linlayout"
+    android:orientation="horizontal"  >
+<Button
+    android:id="@+id/btnValider"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_weight="1"
+    android:text="Valider" />  
+    
+<Button
+    android:id="@+id/btnAnnuler"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_weight="1"
+    android:text="Annuler" /> 
+</LinearLayout>
+
+
+</LinearLayout>
+</ScrollView>

@@ -23,9 +23,10 @@ public class Convocation
   String lieu;
   String competition;
   String id_convoc;
+  String id_club;
 
   
-  public Convocation(String advers,String date, String hrdv, String hmatch, String lrdv, String lmatch, List<String> ljoueurs,List<String> ldirigeants,String date_record,String equipe,String state,String lieu,String competition,String id_convoc)
+  public Convocation(String advers,String date, String hrdv, String hmatch, String lrdv, String lmatch, List<String> ljoueurs,List<String> ldirigeants,String date_record,String equipe,String state,String lieu,String competition,String id_convoc,String id_club)
   { 
     this.adversaire = advers;
     this.date = date;
@@ -41,6 +42,7 @@ public class Convocation
     this.lieu = lieu;
     this.competition = competition;
     this.id_convoc = id_convoc;
+    this.id_club = id_club;
   }
   
   public String getAdversaire()

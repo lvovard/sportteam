@@ -4,24 +4,27 @@
     xmlns:app="http://schemas.android.com/apk/res-auto" >
 
         
- 
+        
+   <item
+        android:id="@+id/action_remove"
+        android:icon="@drawable/ic_indeterminate_check_box_white_24dp"
+        android:title="arrêter le suivi d'un club"
+        android:showAsAction="ifRoom" />
+            
+             
     <item
-        android:id="@+id/action_delete"
-        android:icon="@android:drawable/ic_menu_delete"
-        android:title="action_delete"
+        android:id="@+id/action_add"
+        android:icon="@drawable/ic_add_box_white_24dp"
+        android:title="action_add"
         android:showAsAction="ifRoom" />
         
     <item
-        android:id="@+id/action_add"
-        android:icon="@android:drawable/ic_menu_add"
-        android:title="action_add"
+        android:id="@+id/action_home"
+        android:icon="@drawable/ic_home_white_24dp"
+        android:title="@string/home"
         android:showAsAction="ifRoom" />
+        
 
-    <item
-        android:id="@+id/action_settings"
-        android:orderInCategory="100"
-        android:showAsAction="never"
-        android:title="@string/action_settings"/>
         
 
 

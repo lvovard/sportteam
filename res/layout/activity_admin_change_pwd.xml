@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+ <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/scrollview"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:id="@+id/linlayout"
+    android:orientation="vertical"  >
+
+
+
+
+    
+<TextView
+    android:id="@+id/textoldpwd"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" />      
+    
+<EditText
+    android:id="@+id/txt_old_pwd"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:inputType="textPassword" >
+    <requestFocus />
+</EditText>
+
+<TextView
+    android:id="@+id/textnewpwd"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" />      
+    
+<EditText
+    android:id="@+id/txt_new_pwd"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:inputType="textPassword" >
+    <requestFocus />
+</EditText>
+
+<TextView
+    android:id="@+id/textconfirmpwd"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" />      
+    
+<EditText
+    android:id="@+id/txt_confirm_pwd"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:inputType="textPassword" >
+    <requestFocus />
+</EditText>
+
+<CheckBox
+    android:id="@+id/checkBox1"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:text="Afficher mot de passe" />
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:id="@+id/linlayout"
+    android:orientation="horizontal"  >
+<Button
+    android:id="@+id/btnChanger"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_weight="1"
+    android:text="Changer" />  
+    
+<Button
+    android:id="@+id/btnAnnuler"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_weight="1"
+    android:text="Annuler" /> 
+</LinearLayout>
+</LinearLayout>
+</ScrollView>

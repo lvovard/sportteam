@@ -23,85 +23,6 @@ public final class R {
     public static final class array {
         public static final int cat_array=0x7f0c0003;
         /** 
-    19 : Corrèze
-2A : Corse-du-Sud
-2B : Haute-Corse
-21 : Côte-d'Or
-22 : Côtes-d'Armor
-23 : Creuse
-24 : Dordogne
-25 : Doubs
-26 : Drôme
-27 : Eure
-    28 : Eure-et-Loir
-29 : Finistère
-30 : Gard
-31 : Haute-Garonne
-32 : Gers
-33 : Gironde
-34 : Hérault
-35 : Ille-et-Vilaine
-36 : Indre
-37 : Indre-et-Loire
-38 : Isère
-39 : Jura
-40 : Landes
-41 : Loir-et-Cher
-42 : Loire
-43 : Haute-Loire
-44 : Loire-Atlantique
-45 : Loiret
-46 : Lot
-47 : Lot-et-Garonne
-48 : Lozère
-49 : Maine-et-Loire
-50 : Manche
-51 : Marne
-52 : Haute-Marne
-53 : Mayenne
-54 : Meurthe-et-Moselle
-55 : Meuse
-56 : Morbihan
-57 : Moselle
-58 : Nièvre
-59 : Nord
-60 : Oise
-61 : Orne
-62 : Pas-de-Calais
-63 : Puy-de-Dôme
-64 : Pyrénées-Atlantiques
-65 : Hautes-Pyrénées
-66 : Pyrénées-Orientales
-67 : Bas-Rhin
-68 : Haut-Rhin
-69D : Rhône
-69M : Métropole de Lyon
-70 : Haute-Saône
-71 : Saône-et-Loire
-72 : Sarthe
-73 : Savoie
-74 : Haute-Savoie
-75 : Paris
-76 : Seine-Maritime
-77 : Seine-et-Marne
-78 : Yvelines
-79 : Deux-Sèvres
-80 : Somme
-81 : Tarn
-82 : Tarn-et-Garonne
-83 : Var
-84 : Vaucluse
-85 : Vendée
-86 : Vienne
-87 : Haute-Vienne
-88 : Vosges
-89 : Yonne
-90 : Territoire de Belfort
-91 : Essonne
-92 : Hauts-de-Seine
-93 : Seine-Saint-Denis
-94 : Val-de-Marne
-95 : Val-d'Oise
 971 : Guadeloupe
 972 : Martinique
 973 : Guyane
@@ -115,6 +36,24 @@ public final class R {
 987 : Polynésie française
 988 : Nouvelle-Calédonie
 989 : île de Clipperton
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -2133,27 +2072,82 @@ containing a value of this type.
         public static final int abc_textfield_search_activated_mtrl_alpha=0x7f020048;
         public static final int abc_textfield_search_default_mtrl_alpha=0x7f020049;
         public static final int abc_textfield_search_material=0x7f02004a;
-        public static final int ajout=0x7f02004b;
-        public static final int basketball=0x7f02004c;
-        public static final int basketballbkg=0x7f02004d;
-        public static final int basketbkg=0x7f02004e;
-        public static final int bkg=0x7f02004f;
+        public static final int ballonbasket=0x7f02004b;
+        public static final int ballonfootball=0x7f02004c;
+        public static final int ballonhandball=0x7f02004d;
+        public static final int ballonrugby=0x7f02004e;
+        public static final int ballonvolley=0x7f02004f;
         public static final int bluebkg=0x7f020050;
-        public static final int football=0x7f020051;
-        public static final int footballtest=0x7f020052;
-        public static final int footballtestvv=0x7f020053;
-        public static final int footballtestvvv=0x7f020054;
-        public static final int footbkg=0x7f020055;
-        public static final int handball=0x7f020056;
-        public static final int ic_launcher=0x7f020057;
-        public static final int ic_launcher_old=0x7f020058;
-        public static final int notification_template_icon_bg=0x7f02005b;
-        public static final int rugby=0x7f020059;
-        public static final int volleyball=0x7f02005a;
+        public static final int gazon=0x7f020051;
+        public static final int ic_add_box_white_24dp=0x7f020052;
+        public static final int ic_add_circle_black_24dp=0x7f020053;
+        public static final int ic_build_black_24dp=0x7f020054;
+        public static final int ic_build_white_24dp=0x7f020055;
+        public static final int ic_create_black_24dp=0x7f020056;
+        public static final int ic_delete_white_24dp=0x7f020057;
+        public static final int ic_euro_symbol_black_24dp=0x7f020058;
+        public static final int ic_euro_symbol_white_24dp=0x7f020059;
+        public static final int ic_event_add_black_24dp=0x7f02005a;
+        public static final int ic_event_black_24dp=0x7f02005b;
+        public static final int ic_event_icon_black_24dp=0x7f02005c;
+        public static final int ic_event_modify_black_24dp=0x7f02005d;
+        public static final int ic_event_remove_black_24dp=0x7f02005e;
+        public static final int ic_event_white_24dp=0x7f02005f;
+        public static final int ic_exposure_white_24dp=0x7f020060;
+        public static final int ic_fiber_new_black_24dp=0x7f020061;
+        public static final int ic_fiber_new_white_24dp=0x7f020062;
+        public static final int ic_group_black_24dp=0x7f020063;
+        public static final int ic_group_icon_black_24dp=0x7f020064;
+        public static final int ic_group_white_24dp=0x7f020065;
+        public static final int ic_home_white_24dp=0x7f020066;
+        public static final int ic_indeterminate_check_box_white_24dp=0x7f020067;
+        public static final int ic_info_black_24dp=0x7f020068;
+        public static final int ic_info_icon_black_24dp=0x7f020069;
+        public static final int ic_info_white_24dp=0x7f02006a;
+        public static final int ic_launcher=0x7f02006b;
+        public static final int ic_launcher_old=0x7f02006c;
+        public static final int ic_launcher_old1=0x7f02006d;
+        public static final int ic_live_help_white_24dp=0x7f02006e;
+        public static final int ic_lock_black_24dp=0x7f02006f;
+        public static final int ic_lock_icon_black_24dp=0x7f020070;
+        public static final int ic_lock_white_24dp=0x7f020071;
+        public static final int ic_lockadmin_black_24dp=0x7f020072;
+        public static final int ic_lockadmin_white_24dp=0x7f020073;
+        public static final int ic_lockuser_black_24dp=0x7f020074;
+        public static final int ic_lockuser_white_24dp=0x7f020075;
+        public static final int ic_looks_icon_two_black_24dp=0x7f020076;
+        public static final int ic_looks_two_black_24dp=0x7f020077;
+        public static final int ic_menu_login=0x7f020078;
+        public static final int ic_person_black_24dp=0x7f020079;
+        public static final int ic_person_icon_black_24dp=0x7f02007a;
+        public static final int ic_person_white_24dp=0x7f02007b;
+        public static final int ic_pie_chart_black_24dp=0x7f02007c;
+        public static final int ic_pie_chart_white_24dp=0x7f02007d;
+        public static final int ic_remove_circle_black_24dp=0x7f02007e;
+        public static final int ic_settings_black_24dp=0x7f02007f;
+        public static final int ic_settings_icon_black_24dp=0x7f020080;
+        public static final int ic_settings_white_24dp=0x7f020081;
+        public static final int ic_share_white_24dp=0x7f020082;
+        public static final int ic_visibility_black_24dp=0x7f020083;
+        public static final int ic_visibility_white_24dp=0x7f020084;
+        public static final int logo=0x7f020085;
+        public static final int logo512arrondi=0x7f020086;
+        public static final int logoalpha=0x7f020087;
+        public static final int notification_template_icon_bg=0x7f020092;
+        public static final int old1ic_launcher=0x7f020088;
+        public static final int old1logo=0x7f020089;
+        public static final int old_ic_launcher=0x7f02008a;
+        public static final int old_logo=0x7f02008b;
+        public static final int oldic_launcher=0x7f02008c;
+        public static final int terrainbasket=0x7f02008d;
+        public static final int terrainfootball=0x7f02008e;
+        public static final int terrainhandball=0x7f02008f;
+        public static final int terrainrugby=0x7f020090;
+        public static final int terrainvolley=0x7f020091;
     }
     public static final class id {
-        public static final int action0=0x7f09005e;
-        public static final int action_add=0x7f09006d;
+        public static final int action0=0x7f0900be;
+        public static final int action_add=0x7f0900ce;
         public static final int action_bar=0x7f090041;
         public static final int action_bar_activity_content=0x7f090003;
         public static final int action_bar_container=0x7f090040;
@@ -2161,38 +2155,79 @@ containing a value of this type.
         public static final int action_bar_spinner=0x7f090002;
         public static final int action_bar_subtitle=0x7f090022;
         public static final int action_bar_title=0x7f090021;
+        public static final int action_change=0x7f0900cc;
         public static final int action_context_bar=0x7f090042;
-        public static final int action_delete=0x7f09006b;
-        public static final int action_divider=0x7f090062;
+        public static final int action_divider=0x7f0900c2;
+        public static final int action_help=0x7f0900d0;
+        public static final int action_home=0x7f0900cb;
         public static final int action_menu_divider=0x7f090005;
         public static final int action_menu_presenter=0x7f090006;
         public static final int action_mode_bar=0x7f09003e;
         public static final int action_mode_bar_stub=0x7f09003d;
         public static final int action_mode_close_button=0x7f090023;
-        public static final int action_settings=0x7f09006c;
+        public static final int action_remove=0x7f0900cd;
+        public static final int action_share=0x7f0900cf;
         public static final int activity_chooser_view_content=0x7f090024;
         public static final int alertTitle=0x7f090030;
         public static final int always=0x7f090019;
         public static final int beginning=0x7f09001e;
-        public static final int btnClub=0x7f09005d;
-        public static final int btnConnexion=0x7f09005c;
+        public static final int btnAddCat=0x7f090058;
+        public static final int btnAddConv=0x7f090091;
+        public static final int btnAddInfo=0x7f090094;
+        public static final int btnAddPeople=0x7f090097;
+        public static final int btnAddRes=0x7f09009b;
+        public static final int btnAnnuler=0x7f090057;
+        public static final int btnCat=0x7f09008d;
+        public static final int btnChangeAdminPwd=0x7f090099;
+        public static final int btnChangeUserPwd=0x7f09009a;
+        public static final int btnChanger=0x7f090084;
+        public static final int btnConnexion=0x7f0900bc;
+        public static final int btnConvoc=0x7f09008e;
+        public static final int btnCreate=0x7f0900b0;
+        public static final int btnDateInfo=0x7f090073;
+        public static final int btnDateMatch=0x7f09005e;
+        public static final int btnDirigeant=0x7f09006c;
+        public static final int btnExisting=0x7f09009e;
+        public static final int btnGerer=0x7f0900b4;
+        public static final int btnHeureInfo=0x7f090074;
+        public static final int btnHeureMatch=0x7f090065;
+        public static final int btnHeureRdv=0x7f090068;
+        public static final int btnInfo=0x7f090090;
+        public static final int btnJoueur=0x7f09006b;
+        public static final int btnModifyCat=0x7f090059;
+        public static final int btnModifyConv=0x7f090092;
+        public static final int btnModifyInfo=0x7f090095;
+        public static final int btnModifyRes=0x7f09009c;
+        public static final int btnNew=0x7f09009f;
+        public static final int btnPwd=0x7f09008c;
+        public static final int btnRemoveCat=0x7f09005a;
+        public static final int btnRemoveConv=0x7f090093;
+        public static final int btnRemoveInfo=0x7f090096;
+        public static final int btnRemovePeople=0x7f090098;
+        public static final int btnRemoveRes=0x7f09009d;
+        public static final int btnResult=0x7f09008f;
+        public static final int btnSuivre=0x7f0900b3;
+        public static final int btnValider=0x7f090056;
         public static final int buttonPanel=0x7f09002b;
-        public static final int cancel_action=0x7f09005f;
-        public static final int cat_spinner=0x7f090059;
+        public static final int cancel_action=0x7f0900bf;
+        public static final int cat_spinner=0x7f0900b9;
+        public static final int checkBox1=0x7f090083;
+        public static final int checkBoxconvoc=0x7f090085;
         public static final int checkbox=0x7f090039;
-        public static final int chronometer=0x7f090065;
-        public static final int club_spinner=0x7f090057;
+        public static final int chronometer=0x7f0900c5;
+        public static final int club_spinner=0x7f0900b8;
         public static final int collapseActionView=0x7f09001a;
         public static final int contentPanel=0x7f090031;
         public static final int custom=0x7f090037;
         public static final int customPanel=0x7f090036;
         public static final int decor_content_parent=0x7f09003f;
         public static final int default_activity_button=0x7f090027;
-        public static final int departement_spinner=0x7f090055;
+        public static final int departement_spinner=0x7f0900a3;
         public static final int disableHome=0x7f09000d;
+        public static final int editTextdetail=0x7f090072;
         public static final int edit_query=0x7f090043;
         public static final int end=0x7f09001f;
-        public static final int end_padder=0x7f09006a;
+        public static final int end_padder=0x7f0900ca;
         public static final int expand_activities_button=0x7f090025;
         public static final int expanded_menu=0x7f090038;
         public static final int home=0x7f090000;
@@ -2200,13 +2235,14 @@ containing a value of this type.
         public static final int icon=0x7f090029;
         public static final int ifRoom=0x7f09001b;
         public static final int image=0x7f090026;
-        public static final int info=0x7f090069;
-        public static final int line1=0x7f090063;
-        public static final int line3=0x7f090067;
-        public static final int linlayout=0x7f090050;
+        public static final int imagewelcome=0x7f0900b2;
+        public static final int info=0x7f0900c9;
+        public static final int line1=0x7f0900c3;
+        public static final int line3=0x7f0900c7;
+        public static final int linlayout=0x7f090051;
         public static final int listMode=0x7f09000a;
         public static final int list_item=0x7f090028;
-        public static final int media_actions=0x7f090061;
+        public static final int media_actions=0x7f0900c1;
         public static final int middle=0x7f090020;
         public static final int multiply=0x7f090014;
         public static final int never=0x7f09001c;
@@ -2220,7 +2256,7 @@ containing a value of this type.
         public static final int scrollIndicatorDown=0x7f090035;
         public static final int scrollIndicatorUp=0x7f090032;
         public static final int scrollView=0x7f090033;
-        public static final int scrollview=0x7f090051;
+        public static final int scrollview=0x7f090050;
         public static final int search_badge=0x7f090045;
         public static final int search_bar=0x7f090044;
         public static final int search_button=0x7f090046;
@@ -2237,27 +2273,84 @@ containing a value of this type.
         public static final int showHome=0x7f090011;
         public static final int showTitle=0x7f090012;
         public static final int spacer=0x7f09002c;
+        public static final int spinner_cat=0x7f090053;
+        public static final int spinner_compet=0x7f090064;
+        public static final int spinner_convoc=0x7f09005d;
+        public static final int spinner_equipe=0x7f090055;
+        public static final int spinner_info=0x7f09006e;
+        public static final int spinner_match=0x7f090062;
+        public static final int spinner_people=0x7f09007c;
+        public static final int spinner_result=0x7f090087;
+        public static final int spinner_role=0x7f090076;
+        public static final int spinner_scoreadversaire=0x7f09008b;
+        public static final int spinner_scoreequipe=0x7f090089;
         public static final int split_action_bar=0x7f090004;
-        public static final int sport_spinner=0x7f090053;
+        public static final int sport_spinner=0x7f0900a1;
         public static final int src_atop=0x7f090016;
         public static final int src_in=0x7f090017;
         public static final int src_over=0x7f090018;
-        public static final int status_bar_latest_event_content=0x7f090060;
+        public static final int statistic_detail=0x7f0900bd;
+        public static final int statistic_detail_container=0x7f0900b5;
+        public static final int statistic_list=0x7f0900b6;
+        public static final int status_bar_latest_event_content=0x7f0900c0;
         public static final int submit_area=0x7f09004c;
         public static final int tabMode=0x7f09000c;
-        public static final int text=0x7f090068;
-        public static final int text2=0x7f090066;
+        public static final int text=0x7f0900c8;
+        public static final int text2=0x7f0900c6;
         public static final int textSpacerNoButtons=0x7f090034;
-        public static final int textcat=0x7f090058;
-        public static final int textclub=0x7f090056;
-        public static final int textdep=0x7f090054;
-        public static final int textpwd=0x7f09005a;
-        public static final int textsport=0x7f090052;
-        public static final int time=0x7f090064;
+        public static final int textadversaire=0x7f09005f;
+        public static final int textbidon=0x7f0900b1;
+        public static final int textcat=0x7f090052;
+        public static final int textclub=0x7f0900a4;
+        public static final int textcompet=0x7f090063;
+        public static final int textconfirmpwd=0x7f090081;
+        public static final int textconvoc=0x7f09005c;
+        public static final int textdep=0x7f0900a2;
+        public static final int textdetail=0x7f090071;
+        public static final int textemail=0x7f0900a6;
+        public static final int textequipe=0x7f09005b;
+        public static final int textinfo=0x7f09006d;
+        public static final int textlieumatch=0x7f090066;
+        public static final int textlieurdv=0x7f090069;
+        public static final int textmatch=0x7f090061;
+        public static final int textnbteam=0x7f090054;
+        public static final int textnewpwd=0x7f09007f;
+        public static final int textnom=0x7f090077;
+        public static final int textobjet=0x7f09006f;
+        public static final int textoldpwd=0x7f09007d;
+        public static final int textpeople=0x7f09007b;
+        public static final int textprenom=0x7f090079;
+        public static final int textpwd=0x7f0900ba;
+        public static final int textpwdadmin=0x7f0900a8;
+        public static final int textpwdadminconfirm=0x7f0900aa;
+        public static final int textpwduser=0x7f0900ac;
+        public static final int textpwduserconfirm=0x7f0900ae;
+        public static final int textresult=0x7f090086;
+        public static final int textrole=0x7f090075;
+        public static final int textscoreadversaire=0x7f09008a;
+        public static final int textscoreequipe=0x7f090088;
+        public static final int textsport=0x7f0900a0;
+        public static final int time=0x7f0900c4;
+        public static final int time_progress=0x7f0900b7;
         public static final int title=0x7f09002a;
         public static final int title_template=0x7f09002f;
         public static final int topPanel=0x7f09002e;
-        public static final int txtPassword=0x7f09005b;
+        public static final int txtPassword=0x7f0900bb;
+        public static final int txt_adversaire=0x7f090060;
+        public static final int txt_confirm_pwd=0x7f090082;
+        public static final int txt_email=0x7f0900a7;
+        public static final int txt_lieumatch=0x7f090067;
+        public static final int txt_lieurdv=0x7f09006a;
+        public static final int txt_name=0x7f0900a5;
+        public static final int txt_new_pwd=0x7f090080;
+        public static final int txt_nom=0x7f090078;
+        public static final int txt_objet=0x7f090070;
+        public static final int txt_old_pwd=0x7f09007e;
+        public static final int txt_prenom=0x7f09007a;
+        public static final int txt_pwd_admin=0x7f0900a9;
+        public static final int txt_pwd_admin_confirm=0x7f0900ab;
+        public static final int txt_pwd_user=0x7f0900ad;
+        public static final int txt_pwd_user_confirm=0x7f0900af;
         public static final int up=0x7f090001;
         public static final int useLogo=0x7f090013;
         public static final int withText=0x7f09001d;
@@ -2325,43 +2418,96 @@ containing a value of this type.
         public static final int abc_search_dropdown_item_icons_2line=0x7f030016;
         public static final int abc_search_view=0x7f030017;
         public static final int abc_select_dialog_material=0x7f030018;
-        public static final int activity_category=0x7f030019;
-        public static final int activity_choice=0x7f03001a;
-        public static final int activity_club=0x7f03001b;
-        public static final int activity_convocation=0x7f03001c;
-        public static final int activity_convocdetails=0x7f03001d;
-        public static final int activity_equipe=0x7f03001e;
-        public static final int activity_info=0x7f03001f;
-        public static final int activity_infodetails=0x7f030020;
-        public static final int activity_main=0x7f030021;
-        public static final int activity_resultat=0x7f030022;
-        public static final int activity_resultdetails=0x7f030023;
-        public static final int notification_media_action=0x7f030024;
-        public static final int notification_media_cancel_action=0x7f030025;
-        public static final int notification_template_big_media=0x7f030026;
-        public static final int notification_template_big_media_narrow=0x7f030027;
-        public static final int notification_template_lines=0x7f030028;
-        public static final int notification_template_media=0x7f030029;
-        public static final int notification_template_part_chronometer=0x7f03002a;
-        public static final int notification_template_part_time=0x7f03002b;
-        public static final int select_dialog_item_material=0x7f03002c;
-        public static final int select_dialog_multichoice_material=0x7f03002d;
-        public static final int select_dialog_singlechoice_material=0x7f03002e;
-        public static final int support_simple_spinner_dropdown_item=0x7f03002f;
+        public static final int activity_admin_add_cat=0x7f030019;
+        public static final int activity_admin_cat=0x7f03001a;
+        public static final int activity_admin_change_convocation=0x7f03001b;
+        public static final int activity_admin_change_info=0x7f03001c;
+        public static final int activity_admin_change_people=0x7f03001d;
+        public static final int activity_admin_change_pwd=0x7f03001e;
+        public static final int activity_admin_change_resultat=0x7f03001f;
+        public static final int activity_admin_club=0x7f030020;
+        public static final int activity_admin_convocation=0x7f030021;
+        public static final int activity_admin_info=0x7f030022;
+        public static final int activity_admin_people=0x7f030023;
+        public static final int activity_admin_pwd=0x7f030024;
+        public static final int activity_admin_resultat=0x7f030025;
+        public static final int activity_admin_way_to_add_club=0x7f030026;
+        public static final int activity_category=0x7f030027;
+        public static final int activity_choice=0x7f030028;
+        public static final int activity_club=0x7f030029;
+        public static final int activity_convocation=0x7f03002a;
+        public static final int activity_convocdetails=0x7f03002b;
+        public static final int activity_create_club=0x7f03002c;
+        public static final int activity_equipe=0x7f03002d;
+        public static final int activity_info=0x7f03002e;
+        public static final int activity_infodetails=0x7f03002f;
+        public static final int activity_main=0x7f030030;
+        public static final int activity_resultat=0x7f030031;
+        public static final int activity_resultdetails=0x7f030032;
+        public static final int activity_statistic_detail=0x7f030033;
+        /** 
+    Layout alias to replace the single-pane version of the layout with a
+    two-pane version on Large screens.
+
+    For more on layout aliases, see:
+    http://developer.android.com/training/multiscreen/screensizes.html#TaskUseAliasFilters
+    
+
+    Layout alias to replace the single-pane version of the layout with a
+    two-pane version on Large screens.
+
+    For more on layout aliases, see:
+    http://developer.android.com/training/multiscreen/screensizes.html#TaskUseAliasFilters
+    
+         */
+        public static final int activity_statistic_list=0x7f030034;
+        public static final int activity_statistic_twopane=0x7f030035;
+        public static final int activity_test=0x7f030036;
+        public static final int activity_user_add_club=0x7f030037;
+        public static final int fragment_statistic_detail=0x7f030038;
+        public static final int notification_media_action=0x7f030039;
+        public static final int notification_media_cancel_action=0x7f03003a;
+        public static final int notification_template_big_media=0x7f03003b;
+        public static final int notification_template_big_media_narrow=0x7f03003c;
+        public static final int notification_template_lines=0x7f03003d;
+        public static final int notification_template_media=0x7f03003e;
+        public static final int notification_template_part_chronometer=0x7f03003f;
+        public static final int notification_template_part_time=0x7f030040;
+        public static final int select_dialog_item_material=0x7f030041;
+        public static final int select_dialog_multichoice_material=0x7f030042;
+        public static final int select_dialog_singlechoice_material=0x7f030043;
+        public static final int spinner_item=0x7f030044;
+        public static final int support_simple_spinner_dropdown_item=0x7f030045;
     }
     public static final class menu {
-        public static final int category=0x7f0d0000;
-        public static final int choice=0x7f0d0001;
-        public static final int club=0x7f0d0002;
-        public static final int convocation=0x7f0d0003;
-        public static final int convocdetails=0x7f0d0004;
-        public static final int equipe=0x7f0d0005;
-        public static final int info=0x7f0d0006;
-        public static final int infodetails=0x7f0d0007;
-        public static final int main=0x7f0d0008;
-        public static final int management=0x7f0d0009;
-        public static final int resultat=0x7f0d000a;
-        public static final int resultdetails=0x7f0d000b;
+        public static final int admin_add_cat=0x7f0d0000;
+        public static final int admin_cat=0x7f0d0001;
+        public static final int admin_change_convocation=0x7f0d0002;
+        public static final int admin_change_info=0x7f0d0003;
+        public static final int admin_change_people=0x7f0d0004;
+        public static final int admin_change_pwd=0x7f0d0005;
+        public static final int admin_change_resultat=0x7f0d0006;
+        public static final int admin_club=0x7f0d0007;
+        public static final int admin_convocation=0x7f0d0008;
+        public static final int admin_info=0x7f0d0009;
+        public static final int admin_people=0x7f0d000a;
+        public static final int admin_pwd=0x7f0d000b;
+        public static final int admin_resultat=0x7f0d000c;
+        public static final int admin_way_to_add_club=0x7f0d000d;
+        public static final int category=0x7f0d000e;
+        public static final int choice=0x7f0d000f;
+        public static final int club=0x7f0d0010;
+        public static final int convocation=0x7f0d0011;
+        public static final int convocdetails=0x7f0d0012;
+        public static final int create_club=0x7f0d0013;
+        public static final int equipe=0x7f0d0014;
+        public static final int info=0x7f0d0015;
+        public static final int infodetails=0x7f0d0016;
+        public static final int main=0x7f0d0017;
+        public static final int resultat=0x7f0d0018;
+        public static final int resultdetails=0x7f0d0019;
+        public static final int test=0x7f0d001a;
+        public static final int user_add_club=0x7f0d001b;
     }
     public static final class string {
         /**  Content description for the action bar "home" affordance. [CHAR LIMIT=NONE] 
@@ -2432,6 +2578,8 @@ containing a value of this type.
         public static final int action_settings=0x7f0a0016;
         public static final int app_name=0x7f0a0014;
         public static final int hello_world=0x7f0a0015;
+        public static final int home=0x7f0a0017;
+        public static final int share=0x7f0a0018;
         /**  Text to use when the number in a notification info is too large
          (greater than status_bar_notification_info_maxnum, defined in
          values/config.xml) and must be truncated. May need to be localized
@@ -2439,17 +2587,36 @@ containing a value of this type.
          [CHAR LIMIT=4] 
          */
         public static final int status_bar_notification_info_overflow=0x7f0a0011;
-        public static final int title_activity_category=0x7f0a0018;
-        public static final int title_activity_choice=0x7f0a001a;
-        public static final int title_activity_club=0x7f0a0017;
-        public static final int title_activity_convocation=0x7f0a001b;
-        public static final int title_activity_convocdetails=0x7f0a001c;
-        public static final int title_activity_equipe=0x7f0a0019;
-        public static final int title_activity_info=0x7f0a001f;
-        public static final int title_activity_infodetails=0x7f0a0020;
-        public static final int title_activity_management=0x7f0a0021;
-        public static final int title_activity_resultat=0x7f0a001d;
-        public static final int title_activity_resultdetails=0x7f0a001e;
+        public static final int title_activity_admin_add_cat=0x7f0a0029;
+        public static final int title_activity_admin_cat=0x7f0a0028;
+        public static final int title_activity_admin_change_convocation=0x7f0a002f;
+        public static final int title_activity_admin_change_info=0x7f0a0033;
+        public static final int title_activity_admin_change_people=0x7f0a002d;
+        public static final int title_activity_admin_change_pwd=0x7f0a0027;
+        public static final int title_activity_admin_change_resultat=0x7f0a0031;
+        public static final int title_activity_admin_club=0x7f0a0025;
+        public static final int title_activity_admin_convocation=0x7f0a002e;
+        public static final int title_activity_admin_info=0x7f0a0032;
+        public static final int title_activity_admin_people=0x7f0a002c;
+        public static final int title_activity_admin_pwd=0x7f0a0026;
+        public static final int title_activity_admin_resultat=0x7f0a0030;
+        public static final int title_activity_admin_way_to_add_club=0x7f0a002b;
+        public static final int title_activity_category=0x7f0a001a;
+        public static final int title_activity_choice=0x7f0a001c;
+        public static final int title_activity_club=0x7f0a0019;
+        public static final int title_activity_convocation=0x7f0a001d;
+        public static final int title_activity_convocdetails=0x7f0a001e;
+        public static final int title_activity_create_club=0x7f0a0024;
+        public static final int title_activity_equipe=0x7f0a001b;
+        public static final int title_activity_info=0x7f0a0021;
+        public static final int title_activity_infodetails=0x7f0a0022;
+        public static final int title_activity_management=0x7f0a0023;
+        public static final int title_activity_resultat=0x7f0a001f;
+        public static final int title_activity_resultdetails=0x7f0a0020;
+        public static final int title_activity_test=0x7f0a0034;
+        public static final int title_activity_user_add_club=0x7f0a002a;
+        public static final int title_statistic_detail=0x7f0a0036;
+        public static final int title_statistic_list=0x7f0a0035;
     }
     public static final class style {
         public static final int AlertDialog_AppCompat=0x7f0b0044;
