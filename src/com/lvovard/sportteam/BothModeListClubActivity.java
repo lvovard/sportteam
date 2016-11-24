@@ -121,18 +121,11 @@ public class BothModeListClubActivity extends Activity
         //////////////
         Drawable drawablesport = null;
 
-        if (Build.VERSION.SDK_INT >= 22)
-        {
-          drawablesport = getResources().getDrawable(sport_picture,getApplicationContext().getTheme());
-        }
-        else
-        {
-          drawablesport = getResources().getDrawable(sport_picture);
-        }
+        drawablesport = getResources().getDrawable(sport_picture);
 
         drawablesport.setBounds(0, 0, (int)(drawablesport.getIntrinsicWidth()*1.5),(int)(drawablesport.getIntrinsicHeight()*1.5));
         ScaleDrawable sdsport = new ScaleDrawable(drawablesport, 0, 1, 1);
-        btn.setCompoundDrawables(sdsport.getDrawable(), null, null, null); 
+        btn.setCompoundDrawablesWithIntrinsicBounds(sdsport.getDrawable(), null, null, null); 
         if (mode.contentEquals("user"))
         {
           btn.setText(Html.fromHtml("<big><b><i>"+c.nom+"</i></b></big><br/><small>Accedez aux convocations, resultats, informations et évenements de votre club</small>"));

@@ -54,24 +54,16 @@ public class AdminWayToAddClubActivity extends Activity
     Drawable drawableexisting = null;
     Drawable drawablenew = null;
 
-    if (Build.VERSION.SDK_INT >= 22)
-    {
-      drawableexisting = getResources().getDrawable(R.drawable.ic_build_black_24dp,getApplicationContext().getTheme());
-      drawablenew = getResources().getDrawable(R.drawable.ic_fiber_new_black_24dp,getApplicationContext().getTheme());
-    }
-    else
-    {
-      drawableexisting = getResources().getDrawable(R.drawable.ic_build_black_24dp);
-      drawablenew = getResources().getDrawable(R.drawable.ic_fiber_new_black_24dp);
-    }
+    drawableexisting = getResources().getDrawable(R.drawable.ic_build_black_24dp);
+    drawablenew = getResources().getDrawable(R.drawable.ic_fiber_new_black_24dp);
 
     drawableexisting.setBounds(0, 0, (int)(drawableexisting.getIntrinsicWidth()*1.5),(int)(drawableexisting.getIntrinsicHeight()*1.5));
     ScaleDrawable sdexisting = new ScaleDrawable(drawableexisting, 0, 1, 1);
-    btnExisting.setCompoundDrawables(sdexisting.getDrawable(), null, null, null); 
+    btnExisting.setCompoundDrawablesWithIntrinsicBounds(sdexisting.getDrawable(), null, null, null); 
     btnExisting.setText(Html.fromHtml("<big><b><i>GERER UN CLUB EXISTANT</i></b></big><br/><small>Le club existe déjà et vous souhaitez vous ajouter au groupe d'admin de ce club</small>"));
     drawablenew.setBounds(0, 0, (int)(drawablenew.getIntrinsicWidth()*1.5),(int)(drawablenew.getIntrinsicHeight()*1.5));
     ScaleDrawable sdnew = new ScaleDrawable(drawablenew, 0, 1, 1);
-    btnNew.setCompoundDrawables(sdnew.getDrawable(), null, null, null); 
+    btnNew.setCompoundDrawablesWithIntrinsicBounds(sdnew.getDrawable(), null, null, null); 
     btnNew.setText(Html.fromHtml("<big><b><i>CREER UN NOUVEAU CLUB</i></b></big><br/><small>Le club n'existe pas encore, créez-le et gérez votre club avec SportTeam </small>"));
     ////////////
     addListenerOnButton();

@@ -98,18 +98,11 @@ public class UserListChoiceActivity extends Activity
       }
       
       Drawable drawableadd = null;
-      if (Build.VERSION.SDK_INT >= 22)
-      {
-        drawableadd = getResources().getDrawable(icon,getApplicationContext().getTheme());
-      }
-      else
-      {
-        drawableadd = getResources().getDrawable(icon);
-      }
+      drawableadd = getResources().getDrawable(icon);
       
       drawableadd.setBounds(0, 0, (int)(drawableadd.getIntrinsicWidth()*1.5),(int)(drawableadd.getIntrinsicHeight()*1.5));
       ScaleDrawable sdadd = new ScaleDrawable(drawableadd, 0, 1, 1);
-      btn.setCompoundDrawables(sdadd.getDrawable(), null, null, null);  
+      btn.setCompoundDrawablesWithIntrinsicBounds(sdadd.getDrawable(), null, null, null);  
       btn.setText(Html.fromHtml(text));
       /////////
       btn.setOnClickListener(new OnClickListener() 

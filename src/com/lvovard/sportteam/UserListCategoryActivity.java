@@ -129,18 +129,11 @@ public class UserListCategoryActivity extends Activity
       ///////////////
       Drawable drawablesport = null;
 
-      if (Build.VERSION.SDK_INT >= 22)
-      {
-        drawablesport = getResources().getDrawable(R.drawable.ic_group_black_24dp,getApplicationContext().getTheme());
-      }
-      else
-      {
-        drawablesport = getResources().getDrawable(R.drawable.ic_group_black_24dp);
-      }
+      drawablesport = getResources().getDrawable(R.drawable.ic_group_black_24dp);
 
       drawablesport.setBounds(0, 0, (int)(drawablesport.getIntrinsicWidth()*1.5),(int)(drawablesport.getIntrinsicHeight()*1.5));
       ScaleDrawable sdsport = new ScaleDrawable(drawablesport, 0, 1, 1);
-      btn.setCompoundDrawables(sdsport.getDrawable(), null, null, null); 
+      btn.setCompoundDrawablesWithIntrinsicBounds(sdsport.getDrawable(), null, null, null); 
 
       btn.setText(Html.fromHtml("<big><b><i>"+c.nom+"</i></b></big><br/><small>Accedez aux convocations, résultats, informations et evenements de la catégorie "+c.nom+"</small>"));
       //////////////

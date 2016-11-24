@@ -54,23 +54,15 @@ public class AdminPeopleActivity extends Activity
     Drawable drawableadd = null;
     Drawable drawableremove = null;
 
-    if (Build.VERSION.SDK_INT >= 22)
-    {
-      drawableadd = getResources().getDrawable(R.drawable.ic_add_circle_black_24dp,getApplicationContext().getTheme());
-      drawableremove = getResources().getDrawable(R.drawable.ic_remove_circle_black_24dp,getApplicationContext().getTheme());
-    }
-    else
-    {
-      drawableadd = getResources().getDrawable(R.drawable.ic_add_circle_black_24dp);
-      drawableremove = getResources().getDrawable(R.drawable.ic_remove_circle_black_24dp);
-    }
+    drawableadd = getResources().getDrawable(R.drawable.ic_add_circle_black_24dp);
+    drawableremove = getResources().getDrawable(R.drawable.ic_remove_circle_black_24dp);
     
     drawableadd.setBounds(0, 0, (int)(drawableadd.getIntrinsicWidth()*1.5),(int)(drawableadd.getIntrinsicHeight()*1.5));
     ScaleDrawable sdadd = new ScaleDrawable(drawableadd, 0, 1, 1);
     drawableremove.setBounds(0, 0, (int)(drawableremove.getIntrinsicWidth()*1.5),(int)(drawableremove.getIntrinsicHeight()*1.5));
     ScaleDrawable sdremove = new ScaleDrawable(drawableremove, 0, 1, 1);
-    btnAddPeople.setCompoundDrawables(sdadd.getDrawable(), null, null, null); 
-    btnRemovePeople.setCompoundDrawables(sdremove.getDrawable(), null, null, null); 
+    btnAddPeople.setCompoundDrawablesWithIntrinsicBounds(sdadd.getDrawable(), null, null, null); 
+    btnRemovePeople.setCompoundDrawablesWithIntrinsicBounds(sdremove.getDrawable(), null, null, null); 
     btnAddPeople.setText(Html.fromHtml("<big><b><i>AJOUTER</i></b></big><br/><small>Ajouter un joueur ou un dirigeant pour le club de "+adminclub.nom+"</small>"));
     btnRemovePeople.setText(Html.fromHtml("<big><b><i>SUPPRIMER</i></b></big><br/><small>Supprimer un joueur ou un dirigeant pour le club de "+adminclub.nom+"</small>"));
     

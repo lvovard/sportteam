@@ -169,14 +169,7 @@ public class UserResultDetailsActivity extends Activity
           
           //create bitmap from the bkg picture to have all info
           Drawable myDrawable = null;
-          if (Build.VERSION.SDK_INT >= 22)
-          {
-            myDrawable = getResources().getDrawable(Global.getCurrentBkgPicture(ctx),getApplicationContext().getTheme());
-          }
-          else
-          {
-            myDrawable = getResources().getDrawable(Global.getCurrentBkgPicture(ctx));
-          }
+          myDrawable = getResources().getDrawable(Global.getCurrentBkgPicture(ctx));
           
           Bitmap bkgbitmap      = ((BitmapDrawable) myDrawable).getBitmap();
           

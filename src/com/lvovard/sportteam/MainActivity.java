@@ -156,23 +156,23 @@ public class MainActivity extends Activity {
     btnGerer = (Button) findViewById(R.id.btnGerer);
     Drawable drawablebtn1 = null;
     Drawable drawablebtn2 = null;
-    if (Build.VERSION.SDK_INT >= 22)
-    {
-      drawablebtn1 = getResources().getDrawable(R.drawable.ic_visibility_black_24dp,getApplicationContext().getTheme());
-      drawablebtn1 = getResources().getDrawable(R.drawable.ic_settings_black_24dp,getApplicationContext().getTheme());
-    }
-    else
-    {
+    //if (Build.VERSION.SDK_INT >= 22)
+    //{
+      //drawablebtn1 = getResources().getDrawable(R.drawable.ic_visibility_black_24dp,getApplicationContext().getTheme());
+      //drawablebtn1 = getResources().getDrawable(R.drawable.ic_settings_black_24dp,getApplicationContext().getTheme());
+    //}
+    //else
+    //{
       drawablebtn1 = getResources().getDrawable(R.drawable.ic_visibility_black_24dp);
       drawablebtn2 = getResources().getDrawable(R.drawable.ic_settings_black_24dp);
-    }
+    //}
     
     drawablebtn1.setBounds(0, 0, (int)(drawablebtn1.getIntrinsicWidth()*1.5),(int)(drawablebtn1.getIntrinsicHeight()*1.5));
     ScaleDrawable sd1 = new ScaleDrawable(drawablebtn1, 0, 1, 1);
-    btnSuivre.setCompoundDrawables(sd1.getDrawable(), null, null, null); //set drawableLeft for example
+    btnSuivre.setCompoundDrawablesWithIntrinsicBounds(sd1.getDrawable(), null, null, null); //set drawableLeft for example
     drawablebtn2.setBounds(0, 0, (int)(drawablebtn2.getIntrinsicWidth()*1.5),(int)(drawablebtn2.getIntrinsicHeight()*1.5));
     ScaleDrawable sd2 = new ScaleDrawable(drawablebtn2, 0, 1, 1);
-    btnGerer.setCompoundDrawables(sd2.getDrawable(), null, null, null); //set drawableLeft for example
+    btnGerer.setCompoundDrawablesWithIntrinsicBounds(sd2.getDrawable(), null, null, null); //set drawableLeft for example
     //btnSuivre.setCompoundDrawablesWithIntrinsicBounds(R.drawable.ic_visibility_black_24dp, 0, 0, 0);
     btnSuivre.setText(Html.fromHtml("<big><b><i>SUIVRE UN CLUB</i></b></big><br/><small>Vous pourrez choisir des catégories afin de recevoir les convocation, résultats, informations et evenements</small>"));
     btnGerer.setText(Html.fromHtml("<big><b><i>GERER UN CLUB</i></b></big><br/><small>Vous pourrez envoyer, modifier, supprimer les catégories, joueurs, convocation, résultats, informations et evenements</small>"));

@@ -68,24 +68,15 @@ public class AdminClubActivity extends Activity
     Drawable drawableconvoc = null;
     Drawable drawableresult = null;
     Drawable drawableinfo = null;
-    if (Build.VERSION.SDK_INT >= 22)
-    {
-      drawablepwd = getResources().getDrawable(R.drawable.ic_visibility_black_24dp,getApplicationContext().getTheme());
-      drawablecat = getResources().getDrawable(R.drawable.ic_group_black_24dp,getApplicationContext().getTheme());
-      drawablejoueur = getResources().getDrawable(R.drawable.ic_person_black_24dp,getApplicationContext().getTheme());
-      drawableconvoc = getResources().getDrawable(R.drawable.ic_event_black_24dp,getApplicationContext().getTheme());
-      drawableresult = getResources().getDrawable(R.drawable.ic_looks_two_black_24dp,getApplicationContext().getTheme());
-      drawableinfo = getResources().getDrawable(R.drawable.ic_info_black_24dp,getApplicationContext().getTheme());
-    }
-    else
-    {
-      drawablepwd = getResources().getDrawable(R.drawable.ic_lock_black_24dp);
-      drawablecat = getResources().getDrawable(R.drawable.ic_group_black_24dp);
-      drawablejoueur = getResources().getDrawable(R.drawable.ic_person_black_24dp);
-      drawableconvoc = getResources().getDrawable(R.drawable.ic_event_black_24dp);
-      drawableresult = getResources().getDrawable(R.drawable.ic_looks_two_black_24dp);
-      drawableinfo = getResources().getDrawable(R.drawable.ic_info_black_24dp);
-    }
+
+     
+    drawablepwd = getResources().getDrawable(R.drawable.ic_lock_black_24dp);
+    drawablecat = getResources().getDrawable(R.drawable.ic_group_black_24dp);
+    drawablejoueur = getResources().getDrawable(R.drawable.ic_person_black_24dp);
+    drawableconvoc = getResources().getDrawable(R.drawable.ic_event_black_24dp);
+    drawableresult = getResources().getDrawable(R.drawable.ic_looks_two_black_24dp);
+    drawableinfo = getResources().getDrawable(R.drawable.ic_info_black_24dp);
+    
     
     drawablepwd.setBounds(0, 0, (int)(drawablepwd.getIntrinsicWidth()*1.5),(int)(drawablepwd.getIntrinsicHeight()*1.5));
     ScaleDrawable sdpwd = new ScaleDrawable(drawablepwd, 0, 1, 1);
@@ -99,12 +90,12 @@ public class AdminClubActivity extends Activity
     ScaleDrawable sdresult = new ScaleDrawable(drawableresult, 0, 1, 1);
     drawableinfo.setBounds(0, 0, (int)(drawableinfo.getIntrinsicWidth()*1.5),(int)(drawableinfo.getIntrinsicHeight()*1.5));
     ScaleDrawable sdinfo = new ScaleDrawable(drawableinfo, 0, 1, 1);
-    btnPwd.setCompoundDrawables(sdpwd.getDrawable(), null, null, null); 
-    btnCat.setCompoundDrawables(sdcat.getDrawable(), null, null, null); 
-    btnJoueur.setCompoundDrawables(sdjoueur.getDrawable(), null, null, null); 
-    btnConvoc.setCompoundDrawables(sdconvoc.getDrawable(), null, null, null); 
-    btnResult.setCompoundDrawables(sdresult.getDrawable(), null, null, null); 
-    btnInfo.setCompoundDrawables(sdinfo.getDrawable(), null, null, null); 
+    btnPwd.setCompoundDrawablesWithIntrinsicBounds(sdpwd.getDrawable(), null, null, null); 
+    btnCat.setCompoundDrawablesWithIntrinsicBounds(sdcat.getDrawable(), null, null, null); 
+    btnJoueur.setCompoundDrawablesWithIntrinsicBounds(sdjoueur.getDrawable(), null, null, null); 
+    btnConvoc.setCompoundDrawablesWithIntrinsicBounds(sdconvoc.getDrawable(), null, null, null); 
+    btnResult.setCompoundDrawablesWithIntrinsicBounds(sdresult.getDrawable(), null, null, null); 
+    btnInfo.setCompoundDrawablesWithIntrinsicBounds(sdinfo.getDrawable(), null, null, null); 
     btnPwd.setText(Html.fromHtml("<big><b><i>MOT DE PASSE</i></b></big><br/><small>Vous pourrez modifier le mot de passe utilisateur et admin</small>"));
     btnCat.setText(Html.fromHtml("<big><b><i>CATEGORIES / EQUIPES</i></b></big><br/><small>Vous pourrez ajouter, modifier, supprimer des catégories pour "+adminclub.nom+"</small>"));
     btnJoueur.setText(Html.fromHtml("<big><b><i>JOUEURS / DIRIGEANTS</i></b></big><br/><small>Vous pourrez ajouter ou supprimer des joueurs et dirigeants pour "+adminclub.nom+"</small>"));

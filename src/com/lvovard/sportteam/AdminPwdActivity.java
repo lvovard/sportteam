@@ -56,23 +56,15 @@ public class AdminPwdActivity extends Activity
     Drawable drawableadmin = null;
     Drawable drawableuser = null;
 
-    if (Build.VERSION.SDK_INT >= 22)
-    {
-      drawableadmin = getResources().getDrawable(R.drawable.ic_lockadmin_black_24dp,getApplicationContext().getTheme());
-      drawableuser = getResources().getDrawable(R.drawable.ic_lockuser_black_24dp,getApplicationContext().getTheme());
-    }
-    else
-    {
-      drawableadmin = getResources().getDrawable(R.drawable.ic_lockadmin_black_24dp);
-      drawableuser = getResources().getDrawable(R.drawable.ic_lockuser_black_24dp);
-    }
+    drawableadmin = getResources().getDrawable(R.drawable.ic_lockadmin_black_24dp);
+    drawableuser = getResources().getDrawable(R.drawable.ic_lockuser_black_24dp);
     
     drawableadmin.setBounds(0, 0, (int)(drawableadmin.getIntrinsicWidth()*1.5),(int)(drawableadmin.getIntrinsicHeight()*1.5));
     ScaleDrawable sdadmin = new ScaleDrawable(drawableadmin, 0, 1, 1);
     drawableuser.setBounds(0, 0, (int)(drawableuser.getIntrinsicWidth()*1.5),(int)(drawableuser.getIntrinsicHeight()*1.5));
     ScaleDrawable sduser = new ScaleDrawable(drawableuser, 0, 1, 1);
-    btnChangeAdminPwd.setCompoundDrawables(sdadmin.getDrawable(), null, null, null); 
-    btnChangeUserPwd.setCompoundDrawables(sduser.getDrawable(), null, null, null); 
+    btnChangeAdminPwd.setCompoundDrawablesWithIntrinsicBounds(sdadmin.getDrawable(), null, null, null); 
+    btnChangeUserPwd.setCompoundDrawablesWithIntrinsicBounds(sduser.getDrawable(), null, null, null); 
     btnChangeAdminPwd.setText(Html.fromHtml("<big><b><i>MODIFICATION ADMIN</i></b></big><br/><small>Modofiez le mot de passe admin pour le club de "+adminclub.nom+"</small>"));
     btnChangeUserPwd.setText(Html.fromHtml("<big><b><i>MODIFICATION UTILISATEUR</i></b></big><br/><small>Modofiez le mot de passe utilisateur pour le club de "+adminclub.nom+"</small>"));
     

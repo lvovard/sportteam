@@ -58,18 +58,9 @@ public class AdminInfoActivity extends Activity
     Drawable drawablemodify = null;
     Drawable drawableremove = null;
 
-    if (Build.VERSION.SDK_INT >= 22)
-    {
-      drawableadd = getResources().getDrawable(R.drawable.ic_add_circle_black_24dp,getApplicationContext().getTheme());
-      drawablemodify = getResources().getDrawable(R.drawable.ic_create_black_24dp,getApplicationContext().getTheme());
-      drawableremove = getResources().getDrawable(R.drawable.ic_remove_circle_black_24dp,getApplicationContext().getTheme());
-    }
-    else
-    {
-      drawableadd = getResources().getDrawable(R.drawable.ic_add_circle_black_24dp);
-      drawablemodify = getResources().getDrawable(R.drawable.ic_create_black_24dp);
-      drawableremove = getResources().getDrawable(R.drawable.ic_remove_circle_black_24dp);
-    }
+    drawableadd = getResources().getDrawable(R.drawable.ic_add_circle_black_24dp);
+    drawablemodify = getResources().getDrawable(R.drawable.ic_create_black_24dp);
+    drawableremove = getResources().getDrawable(R.drawable.ic_remove_circle_black_24dp);
     
     drawableadd.setBounds(0, 0, (int)(drawableadd.getIntrinsicWidth()*1.5),(int)(drawableadd.getIntrinsicHeight()*1.5));
     ScaleDrawable sdadd = new ScaleDrawable(drawableadd, 0, 1, 1);
@@ -77,9 +68,9 @@ public class AdminInfoActivity extends Activity
     ScaleDrawable sdmodify = new ScaleDrawable(drawablemodify, 0, 1, 1);
     drawableremove.setBounds(0, 0, (int)(drawableremove.getIntrinsicWidth()*1.5),(int)(drawableremove.getIntrinsicHeight()*1.5));
     ScaleDrawable sdremove = new ScaleDrawable(drawableremove, 0, 1, 1);
-    btnAddInfo.setCompoundDrawables(sdadd.getDrawable(), null, null, null); 
-    btnModifyInfo.setCompoundDrawables(sdmodify.getDrawable(), null, null, null); 
-    btnRemoveInfo.setCompoundDrawables(sdremove.getDrawable(), null, null, null); 
+    btnAddInfo.setCompoundDrawablesWithIntrinsicBounds(sdadd.getDrawable(), null, null, null); 
+    btnModifyInfo.setCompoundDrawablesWithIntrinsicBounds(sdmodify.getDrawable(), null, null, null); 
+    btnRemoveInfo.setCompoundDrawablesWithIntrinsicBounds(sdremove.getDrawable(), null, null, null); 
     btnAddInfo.setText(Html.fromHtml("<big><b><i>AJOUTER</i></b></big><br/><small>Ajouter une information, un evenement pour le club de "+adminclub.nom+"</small>"));
     btnModifyInfo.setText(Html.fromHtml("<big><b><i>MODIFIER</i></b></big><br/><small>Modifier une information, un evenement existant (licence, soirée, repas, entrainement...)</small>"));
     btnRemoveInfo.setText(Html.fromHtml("<big><b><i>SUPPRIMER</i></b></big><br/><small>Supprimer ne information, un evenement du club de "+adminclub.nom+"</small>"));
