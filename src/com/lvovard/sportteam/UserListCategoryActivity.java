@@ -73,7 +73,8 @@ public class UserListCategoryActivity extends Activity
     }
     if (userclub.sport.equals("football"))
     {
-      Global.setCurrentBkgPicture(ctx,R.drawable.terrainfootball);
+      //Global.setCurrentBkgPicture(ctx,R.drawable.terrainfootball);
+      Global.setCurrentBkgPicture(ctx,R.drawable.gazon);
       Global.setSportPicture(ctx,R.drawable.ballonfootball);;
     }
     if (userclub.sport.equals("handball"))

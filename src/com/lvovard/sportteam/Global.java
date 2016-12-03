@@ -1192,7 +1192,7 @@ public class Global
     }
     if (sport.equals("football"))
     {
-      bkg = R.drawable.terrainfootball;
+      //bkg = R.drawable.terrainfootball;
     }
     if (sport.equals("handball"))
     {
