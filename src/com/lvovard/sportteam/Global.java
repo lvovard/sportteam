@@ -62,7 +62,8 @@ public class Global
   static final int NOTIF_OFFSET_CLUB_PWD_USER  = 400000000;
   static final int NOTIF_OFFSET_CLUB_PWD_ADMIN = 500000000;
   
-  static final String URL_SQL_DATABASE = "http://www.sportteam.890m.com";
+  //static final String URL_SQL_DATABASE = "http://www.sportteam.890m.com";
+  static final String URL_SQL_DATABASE = "http://vovardlaurent.000webhostapp.com";
   
   //add club with user permission
   static boolean ConnexionAddUserClub(Context ctx,String sport,String dep,String club,String clubid,String cat,String pwduser)
