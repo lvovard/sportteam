@@ -14,7 +14,7 @@ import android.view.MenuItem;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
-
+//test
 public class AdminCatActivity extends Activity
 {
   protected Button btnAddCat;
