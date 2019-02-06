@@ -20,6 +20,7 @@ import android.app.Activity;
  * {@link StatisticListFragment.Callbacks} interface to listen for item
  * selections.
  */
+ //just for test
 public class StatisticListActivity extends Activity implements StatisticListFragment.Callbacks
 {
 
